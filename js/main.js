@@ -84,35 +84,7 @@ $(document).ready(function() {
 	  $('.carousel').carousel();
 
 
-    /**
-     * Google Map
-     */
-    if ( $('#googleMap').length ) {
-        var mapProp = {
-            center: new google.maps.LatLng(51.508742,-0.120850),
-            zoom:9,
-    scrollwheel: false,
-    navigationControl: false,
-    mapTypeControl: false,
-    scaleControl: false,
-    draggable: false,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var map = new google.maps.Map(document.getElementById('googleMap'), mapProp);
-    }
 
-	/**
-     * Google Map
-     */
-    if ( $('#googleMap').length ) {
-        var mapProp = {
-            center: new google.maps.LatLng(41.878114, -87.629798),
-            zoom:9,
-            scrollwheel: false,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var map = new google.maps.Map(document.getElementById('googleMap'), mapProp);
-    }
 
     // Animated Scrolling
     (function(){

@@ -341,8 +341,17 @@ header .navbar {
 #features .showcase-img {
   margin-top: 40px;
 }
+
+#control-cabinets .title {
+  padding-bottom: 20px;
+}
+
+#control-cabinets .graphic {
+  max-width: 800px;
+}
+
 #counter {
-  background: url(../img/counter-bg.jpg) no-repeat;
+  background: url(../img/desktopphoto.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -694,6 +703,9 @@ header .navbar {
 #pricing-table .block ul {
   border: 1px solid #256B95;
   padding: 35px 20px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
 }
 #pricing-table .block ul li {
   padding: 10px 0;
@@ -707,8 +719,11 @@ header .navbar {
   margin-bottom: 26px;
 }
 #pricing-table .block ul li:first-child h4 {
-  padding-bottom: 29px;
+  padding-bottom: 0;
   font-size: 20px;
+  min-height: 72px;      /* adjust based on font-size */
+  line-height: 24px;     /* 2 lines × 24px = 48px */
+  display: block;
 }
 #pricing-table .block ul li:first-child p {
   font-size: 40px;
@@ -722,6 +737,7 @@ header .navbar {
 #pricing-table .block ul li:last-child {
   color: #256B95;
   margin-top: 25px;
+  margin-top: auto; 
 }
 #pricing-table .block .btn-buy {
   border-color: #fff;
@@ -754,6 +770,9 @@ header .navbar {
 #contact-form {
   padding: 100px 0;
   background:#f9f9f9;
+}
+#contact-form .title {
+  padding-bottom: 40px;
 }
 #contact-form form input,
 #contact-form form textarea {
@@ -800,11 +819,9 @@ header .navbar {
 /* line 125, ../../scss/_contact.scss */
 .map #googleMap {
   min-height: 345px;
-  -webkit-filter: gray;
-  filter: gray;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(1);
-  -webkit-filter: grayscale(100%);
+  -webkit-filter: #256a95;
+  filter: #7cbae0;
+
 }
 /* ================ Home end ========================= */
 /* =====================
@@ -849,7 +866,8 @@ header .navbar {
    Service page style
    ===================== */
 #client-logo {
-  padding: 0 0 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   text-align: center;
 }
 #client-logo a {
