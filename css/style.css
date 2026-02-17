@@ -183,7 +183,7 @@ header .navbar {
   transition: 0.3s;
 }
 .navbar-toggle:hover {
-  border-color: #05A960;
+  border-color: rgb(5, 169, 96);
 }
 .navbar-toggle:hover .icon-bar {
   background: #05A960;
@@ -1353,7 +1353,21 @@ footer p {
 .navbar-nav .dropdown-menu > li > a::before {
   content: none !important;
 }
-
+/* Targets the links inside the dropdown list */
+.dropdown-menu > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.dropdown-menu > li > a:hover{
+  background-color: #e4f7ee;
+}
+/* Targets the container of the dropdown items */
+.navbar-nav .dropdown-menu {
+    border: 2px solid #05A960; /* Using your green brand color from the toggle */
+    border-radius: 4px;        /* Optional: rounds the corners slightly */
+    box-shadow: 0 6px 12px rgba(0,0,0,.175); /* Optional: adds depth */
+    
+}
 /* About us Page Banner*/
 
 #page-banner {
