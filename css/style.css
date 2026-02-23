@@ -402,7 +402,7 @@ header .navbar {
   padding-top: 20px;
 }
 #portfolio {
-  padding: 100px 0;
+  padding: 70px 0;
 }
 #portfolio .block .recent-work-mixMenu {
   padding-bottom: 40px;
@@ -1630,4 +1630,13 @@ footer p {
 
 html {
   scroll-padding-top: 100px; /* same height as sticky header */
+}
+
+/* --partners.html-- */
+.wrapper {
+    margin-top: 100px;
+    min-height: 80vh; /* This ensures the content area takes up at least 80% of the screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
