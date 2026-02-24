@@ -1666,13 +1666,15 @@ html {
 
     #product-sidebar.affix-bottom {
         position: absolute; /* Prevents sidebar from scrolling into footer */
+        width: 262.5px; /* Fixed width for the 1/4 column */
+
     }
     .col-md-3 {
         position: relative;
     }
 }
 
-/* 2. Small Desktop Behavior (992px to 1100px) */
+/* 2. Small Desktop Behavior (992px to 1199px) */
 @media (max-width: 1199px) and (min-width: 992px) {
     #product-sidebar.affix {
         position: fixed;
@@ -1688,13 +1690,14 @@ html {
 
     #product-sidebar.affix-bottom {
         position: absolute; /* Prevents sidebar from scrolling into footer */
+        width: 212.5px;
     }
     .col-md-3 {
         position: relative;
     }
 }
 
-/* 2. Mobile Behavior (Everything below 991px) */
+/* 3. Mobile Behavior (Everything below 991px) */
 @media (max-width: 991px) {
     #product-sidebar.affix, 
     #product-sidebar.affix-top {
@@ -1726,7 +1729,7 @@ html {
 .product-sidebar ul li a:hover {
     background-color: #f4f4f4 !important;
     color: #05A960 !important;
-    border-left: 4px solid #05A960;
+    border-left: 4px solid #05a960;
 }
 
 /* Content Area Styling */
