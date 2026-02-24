@@ -1640,3 +1640,132 @@ html {
     flex-direction: column;
     justify-content: space-between;
 }
+
+/* --products.html-- */
+/* Sidebar Styling */
+.product-sidebar {
+    background: #fdfdfd;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    overflow: hidden;
+}
+/* 2. Large Desktop Behavior (992px and up) */
+
+@media (min-width: 1200px) {
+    #product-sidebar.affix {
+        position: fixed;
+        top: 155px; /* Space below your fixed navbar */
+        width: 262.5px; /* Fixed width for the 1/4 column */
+        z-index: 100; /* Lower than navbar (usually 1030) but higher than content */
+    }
+
+    #product-sidebar.affix-top {
+        position: static; /* Stays in the grid until scroll reaches offset */
+        width: auto;
+    }
+
+    #product-sidebar.affix-bottom {
+        position: absolute; /* Prevents sidebar from scrolling into footer */
+    }
+    .col-md-3 {
+        position: relative;
+    }
+}
+
+/* 2. Small Desktop Behavior (992px and up) */
+@media (min-width: 992px) {
+    #product-sidebar.affix {
+        position: fixed;
+        top: 155px; /* Space below your fixed navbar */
+        width: 212.5px; /* Fixed width for the 1/4 column */
+        z-index: 100; /* Lower than navbar (usually 1030) but higher than content */
+    }
+
+    #product-sidebar.affix-top {
+        position: static; /* Stays in the grid until scroll reaches offset */
+        width: auto;
+    }
+
+    #product-sidebar.affix-bottom {
+        position: absolute; /* Prevents sidebar from scrolling into footer */
+    }
+    .col-md-3 {
+        position: relative;
+    }
+}
+
+/* 2. Mobile Behavior (Everything below 991px) */
+@media (max-width: 991px) {
+    #product-sidebar.affix, 
+    #product-sidebar.affix-top {
+        position: static !important; /* Force sidebar to stay in normal flow */
+        width: 100% !important;
+        margin-bottom: 30px;
+    }
+}
+
+.sidebar-title {
+    background: #05A960; /* Company Green */
+    color: #fff;
+    padding: 15px;
+    margin: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.product-sidebar ul li a {
+    color: #333;
+    border-radius: 0;
+    border-bottom: 1px solid #eee;
+    padding: 12px 20px;
+    transition: all 0.3s;
+}
+
+.product-sidebar ul li.active a,
+.product-sidebar ul li a:hover {
+    background-color: #f4f4f4 !important;
+    color: #05A960 !important;
+    border-left: 4px solid #05A960;
+}
+
+/* Content Area Styling */
+.product-detail-block {
+    margin-bottom: 60px;
+}
+
+.section-heading {
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background: #05A960;
+}
+
+.product-image-wrapper {
+    margin-bottom: 25px;
+    border: 1px solid #eee;
+    padding: 5px;
+    background: #fff;
+}
+
+.product-description p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+}
+
+.product-separator {
+    margin: 40px 0;
+    border-top: 1px solid #eee;
+}
