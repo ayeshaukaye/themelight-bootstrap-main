@@ -1672,8 +1672,8 @@ html {
     }
 }
 
-/* 2. Small Desktop Behavior (992px and up) */
-@media (min-width: 992px) {
+/* 2. Small Desktop Behavior (992px to 1100px) */
+@media (max-width: 1199px) and (min-width: 992px) {
     #product-sidebar.affix {
         position: fixed;
         top: 155px; /* Space below your fixed navbar */
