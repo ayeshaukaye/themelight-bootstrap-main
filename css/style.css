@@ -1681,11 +1681,15 @@ html {
         top: 155px; /* Space below your fixed navbar */
         width: 212.5px; /* Fixed width for the 1/4 column */
         z-index: 100; /* Lower than navbar (usually 1030) but higher than content */
+        transition: all 0.3s;
+
     }
 
     #product-sidebar.affix-top {
         position: static; /* Stays in the grid until scroll reaches offset */
         width: auto;
+        transition: all 0.3s;
+
     }
 
     #product-sidebar.affix-bottom {
@@ -1722,7 +1726,7 @@ html {
     border-radius: 0;
     border-bottom: 1px solid #eee;
     padding: 12px 20px;
-    transition: all 0.3s;
+    transition: all 0.1s;
 }
 
 .product-sidebar ul li.active a,
@@ -1735,6 +1739,7 @@ html {
 /* Content Area Styling */
 .product-detail-block {
     margin-bottom: 60px;
+    scroll-padding-top: 115px; /* adjust to your navbar height */
 }
 
 .section-heading {
