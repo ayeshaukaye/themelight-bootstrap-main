@@ -1682,7 +1682,9 @@ html {
         width: 212.5px; /* Fixed width for the 1/4 column */
         z-index: 100; /* Lower than navbar (usually 1030) but higher than content */
         transition: all 0.3s;
-
+        max-height: 450px;
+        overflow-y: auto; /* Adds vertical scrollbar when needed */
+        overflow-x: hidden; /* Hides horizontal scrollbar */
     }
 
     #product-sidebar.affix-top {
