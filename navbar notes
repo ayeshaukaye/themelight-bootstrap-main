@@ -6,5 +6,5 @@
  - services 4cards styling
  - text length of features headings on index.html
  - products sidebar active items
-
+ - partners footer not sticky
         scrollbar-color: #05a96014, #0cd37957;

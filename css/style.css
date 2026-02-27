@@ -930,6 +930,8 @@ footer {
   background: #202322;
   padding: 42px 0 65px 0;
   text-align: center;
+  margin-top: 10px;
+  
 }
 footer p {
   font-size: 14px;
@@ -1508,10 +1510,10 @@ footer p {
 }
 
 .solutions-banner {
-  background: url('../img/Image.jpeg');
+  background: url('../img/solpg32.jpeg');
 }
 
-.portfolio-banner {
+.portfolio-banner  {
   background: url('../img/pfopg.jpeg');
 }
 
@@ -1639,6 +1641,46 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+  #partners {
+    padding: 70px 0;
+  }
+}
+.partner-title {
+  text-align: center;
+
+}
+.partner-heading {
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+}
+.partner-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background: #05A960;
+}
+
+.partner-text p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 15px;
+}
+.partner-image {
+  text-align: right;
+}
+
+.partner-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
 /* --products.html-- */
