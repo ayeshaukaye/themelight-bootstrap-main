@@ -703,22 +703,24 @@ header .navbar {
 #pricing-table .block {
   color: #000;
   margin-bottom: 60px;
+
 }
 #pricing-table .block ul {
-  border: 1px solid #256B95;
+  border: 2px solid rgb(37, 107, 149);
   padding: 35px 20px;
   min-height: 400px;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 4px 8px 7px rgba(37, 107, 149, 0.2);
 }
 #pricing-table .block ul li {
   padding: 10px 0;
 }
-/*
+
 #pricing-table .block ul li p {
-  text-transform: uppercase;
+  font-size: 16px;
 }
-*/
+
 #pricing-table .block ul li:first-child {
   margin-bottom: 26px;
 }
@@ -1691,15 +1693,18 @@ html {
     border-radius: 4px;
     overflow: hidden;
 }
-/* 2. Large Desktop Behavior (992px and up) */
+/* 1. Large Desktop Behavior (992px and up) */
 
 @media (min-width: 1200px) {
+    .productcontainer{
+      width: 1600px;
+    }
     #product-sidebar.affix {
         position: fixed;
         top: 155px; /* Space below your fixed navbar */
-        width: 262.5px; /* Fixed width for the 1/4 column */
+        width: 370px; /* Fixed width for the 1/4 column */
         z-index: 100; /* Lower than navbar (usually 1030) but higher than content */
-        max-height: 550px;
+        max-height: 750px;
         overflow-y: auto; /* Adds vertical scrollbar when needed */
         overflow-x: hidden; /* Hides horizontal scrollbar */
         scrollbar-width: thin;
@@ -1764,7 +1769,7 @@ html {
     color: #fff;
     padding: 15px;
     margin: 0;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
     font-size: 14px;
 }
@@ -1810,7 +1815,7 @@ html {
 
 .product-image-wrapper {
     margin-bottom: 25px;
-    border: 1px solid #eee;
+    /*border: 1px solid #eee; */
     padding: 5px;
     background: #fff;
 }

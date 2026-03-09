@@ -2,9 +2,9 @@
  - fix gallery button
  - services dropdown fix
  - logo links remove index.html
- - make footer sticky.
+ - make footer sticky. **************
  - services 4cards styling
  - text length of features headings on index.html
  - products sidebar active items
  - partners footer not sticky
-        scrollbar-color: #05a96014, #0cd37957;
+ - services 4 boxes height on below 1200 above 992 screens
