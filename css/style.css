@@ -586,9 +586,10 @@ header .navbar {
 #testimonial .media .media-left a {
   position: relative;
   display: block;
+
 }
 #testimonial .media .media-left a:before {
-  content: "\f347";
+  /*content: "\f347";*/
   position: absolute;
   left: 0;
   top: 0;
@@ -596,12 +597,13 @@ header .navbar {
   height: 28px;
   border-radius: 100%;
   font-family: "Ionicons";
-  background: #256B95;
+  background: #256a95;
   text-align: center;
   color: #fff;
   font-size: 13px;
   padding-top: 2px;
 }
+
 #testimonial .media .media-body {
   padding-top: 5px;
 }
