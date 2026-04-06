@@ -11,6 +11,7 @@
  - 768 to 992px gallery + partners, title hidden behind nav
  - contact button broken? index
  - solutions mobile screen view scrolling horizontally
+ - portfolio pg circle images overlap on small screen ![](image-1.png)
 
 
  ============ mobile responsiveness ============
