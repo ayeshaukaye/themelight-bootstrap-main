@@ -1,5 +1,5 @@
 ✔ remove water and waste from portfolio
- - fix gallery button
+✔ fix gallery button
  - services dropdown fix
 ✔ logo links remove index.html
 ✔ make footer sticky.
@@ -7,10 +7,10 @@
 ✔ text length of features headings on index.html
  - products sidebar active items
 ✔ partners footer not sticky
- - services 4 boxes height on 992 to 1200 screens
+ - services 4 boxes height on 992 to 1200 screens ![screenshot](image.png)
  - 768 to 992px gallery + partners, title hidden behind nav
  - contact button broken? index
- 
+ - solutions mobile screen view scrolling horizontally
 
 
  ============ mobile responsiveness ============
@@ -21,6 +21,6 @@
   services
   portfolio
 ✔ partners
-  gallery
+✔ gallery
   about
   contact????

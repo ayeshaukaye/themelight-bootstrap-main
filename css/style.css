@@ -357,11 +357,11 @@ header .navbar {
 #control-cabinets .title {
   padding-bottom: 20px;
 }
-
+/*
 #control-cabinets .graphic {
   max-width: 800px;
 }
-
+*/
 #counter {
   background: url(../img/desktopphoto.jpg) no-repeat;
   background-size: cover;

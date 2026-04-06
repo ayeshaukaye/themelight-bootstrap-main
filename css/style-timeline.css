@@ -46,6 +46,53 @@ h4{text-align:center;margin:30px 0;color:#444}*/
   padding: 0;      /* remove any unwanted padding */
   /* add any other overrides you want */
 }
+@media screen and (max-width: 767px) {
+    /* Move the central line to the left */
+    .main-timeline:before {
+        left: 15px;
+        right: auto;
+        margin: 0;
+    }
+
+    /* Adjust the timeline item container */
+    .main-timeline .timeline {
+        width: 100%;
+        display: block;
+        margin-left: 35px; /* Leave space for the line */
+    }
+
+    /* Move the circle indicator to the line */
+    .main-timeline .timeline:before {
+        left: -20px;
+        top: 20px;
+        transform: none;
+    }
+
+    /* Hide the large floating icons or resize them */
+    /* Many mobile timelines hide the large icon and just use the dot */
+    .main-timeline .timeline-icon {
+        display: none; 
+    }
+
+    /* Expand content to full width */
+    .main-timeline .timeline-content {
+        width: 100%;
+        float: none;
+        padding: 0 20px 0 30px;
+        margin-top: 0;
+    }
+
+    /* Reset the connectors (pseudo-elements) */
+    .main-timeline .timeline-content:before,
+    .main-timeline .timeline-content:after {
+        display: none; /* Hide complex connectors on mobile for clarity */
+    }
+
+    /* Force even items to look like odd items (no more alternating) */
+    .main-timeline .timeline:nth-child(even) .timeline-content {
+        float: none;
+    }
+}
 
 /*
 .section-intro h4 {
