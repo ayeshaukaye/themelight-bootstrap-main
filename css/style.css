@@ -1510,23 +1510,23 @@ footer p {
 }
 
 .about-banner {
-  background-image: url('../img/banners/cc6.jpeg');
+  background-image: url('../img/banners/about.jpeg');
 }
 
 .product-banner {
-  background: url('../img/gallery/swbrd3.jpeg');
+  background: url('../img/banners/products.jpeg');
 }
 
 .services-banner {
-  background: url('../img/servpg11.jpeg');
+  background: url('../img/banners/services.jpeg');
 }
 
 .solutions-banner {
-  background: url('../img/solpg32.jpeg');
+  background: url('../img/banners/solutions.jpeg');
 }
 
 .portfolio-banner  {
-  background: url('../img/pfopg.jpeg');
+  background: url('../img/banners/portfolio.jpeg');
 }
 
 /* ---solutions.html --- */
