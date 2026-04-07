@@ -577,10 +577,18 @@ header .navbar {
 #pricing-table .block {
   color: #000;
   margin-bottom: 60px;
+  transition: all 0.2s ease-in-out;
 
 }
+#pricing-table .block:hover {
+  /* Stronger glow on hover */
+  box-shadow: 0 15px 35px rgba(37, 107, 149, 0.2);
+  transform: translateY(-5px); /* Gentle lift effect */
+  border-color: #256b95;       /* Highlight border on hover */
+  transform: scale(1.05);
+}
 #pricing-table .block ul {
-  border: 2px solid rgb(37, 107, 149);
+  border: 2px solid #256b95;
   padding: 35px 20px;
   min-height: 400px;
   display: flex;
@@ -614,11 +622,13 @@ header .navbar {
   font-size: 16px;
   font-weight: 300;
 }
+/*
 #pricing-table .block ul li:last-child {
   color: #256B95;
   margin-top: 25px;
   margin-top: auto; 
 }
+  */
 #pricing-table .block .btn-buy {
   border-color: #fff;
   border-radius: 25px;
@@ -940,7 +950,7 @@ footer p {
 }
 
 .services-banner {
-  background: url('../img/banners/services.jpeg');
+  background: url('../img/banners/serv2.jpeg ');
 }
 
 .solutions-banner {
@@ -948,7 +958,7 @@ footer p {
 }
 
 .portfolio-banner  {
-  background: url('../img/banners/DGUnits_2.jpg');
+  background: url('../img/banners/portfolio.jpeg');
 }
 
 /* ---solutions.html --- */

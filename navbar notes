@@ -12,6 +12,7 @@
  - contact button broken? index
  - solutions mobile screen view scrolling horizontally
  - portfolio pg circle images overlap on small screen ![](image-1.png)
+ - scrolling v fast to bottom of products pg leads to sidebar overlapping footer ![alt text](image-2.png)
 
 
  ============ mobile responsiveness ============
