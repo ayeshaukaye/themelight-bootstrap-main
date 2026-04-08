@@ -950,7 +950,7 @@ footer p {
 }
 
 .services-banner {
-  background: url('../img/banners/serv2.jpeg ');
+  background: url('../img/banners/serv4.jpg ');
 }
 
 .solutions-banner {
@@ -1062,6 +1062,13 @@ footer p {
   font-size: 14px;
   color: #444;
   list-style: disc;
+}
+.iiot-benefits li > ul > li{
+  margin-top: 10px;
+  margin-left: 40px;
+  font-size: 14px;
+  color: #444;
+  list-style: circle;
 }
 
 .iiot-image {
