@@ -14,6 +14,7 @@
  - portfolio pg circle images overlap on small screen ![](image-1.png)
  - scrolling v fast to bottom of products pg leads to sidebar overlapping footer ![alt text](image-2.png)
  - font size unit?
+ - navbar portfolio button not clickable
 
  ============ mobile responsiveness ============
 ✔ ✘
