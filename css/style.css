@@ -950,7 +950,7 @@ footer p {
 }
 
 .services-banner {
-  background: url('../img/banners/services.jpg');
+  background: url('../img/banners/services3.jpg');
 }
 
 .solutions-banner {
@@ -962,6 +962,13 @@ footer p {
 }
 
 /* ---solutions.html --- */
+#sol-intro-section {
+  padding: 100px 0 60px;
+}
+#sol-intro-section .title p {
+  color: #000;
+}
+
 .section-box {
   padding: 30px 15px;
   background-color: #f8f9fa; /* Light gray background */
