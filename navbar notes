@@ -15,7 +15,7 @@
  - scrolling v fast to bottom of products pg leads to sidebar overlapping footer ![alt text](image-2.png)
  - font size unit?
  - navbar portfolio button not clickable
-
+ ✔ auxdb img touching edges of viewport : prod pg
  ============ mobile responsiveness ============
 ✔ ✘
   index
