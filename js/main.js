@@ -68,7 +68,7 @@ $(document).ready(function() {
      $('.menu').onePageNav({
          currentClass: 'active',
          changeHash: true,
-         scrollSpeed: 1200,
+         scrollSpeed: 400,
          top : 0
     });
 
@@ -96,7 +96,7 @@ $(document).ready(function() {
               if (target.length) {
                 $('html,body').animate({
                   scrollTop: target.offset().top-topoffset
-                }, 1000);
+                }, 400);
                 return false;
               } // target.length
             } //location hostname
@@ -104,7 +104,7 @@ $(document).ready(function() {
 
           $.scrollUp({
             scrollDistance: 2000,
-            scrollSpeed: 1200,
+            scrollSpeed: 400,
           });
       }())
  
