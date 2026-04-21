@@ -16,13 +16,13 @@
  *
  *	Reset Class Css
  *
- *===================*/
+ *===================
  html {
   scroll-behavior: smooth;
   height: 100%;
   margin: 0;
 }
-
+*/
 body {
   line-height: 24px;
   font-size: 14px;
@@ -867,7 +867,6 @@ footer p {
   font-size: 16px;
 }
 #mission-vision {
-  background: #f9f9f9; 
   padding: 30px 0;
 }
 #mission-vision h3{
