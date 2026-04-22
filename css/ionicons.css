@@ -22,6 +22,8 @@
 .ion,
 .ionicons,
 
+.ion-android-checkmark-circle:before,
+.ion-android-desktop:before,
 .ion-android-settings:before,
 .ion-arrow-expand:before,
 
@@ -36,7 +38,8 @@
 .ion-ios-time-outline:before,
 .ion-ios-world-outline:before,
 .ion-person:before,
-.ion-settings:before {
+.ion-settings:before,
+.ion-wrench:before {
     display: inline-block;
     font-family: "Ionicons";
     speak: none;
@@ -49,6 +52,8 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
 }
+.ion-android-checkmark-circle:before{content:"\f375"}
+.ion-android-desktop:before{content:"\f380"}
 .ion-android-settings:before{content:"\f2f7"}
 
 .ion-arrow-expand:before {
@@ -93,3 +98,4 @@
 .ion-settings:before {
     content: "\f2ad"
 }
+.ion-wrench:before{content:"\f2ba"}
