@@ -565,7 +565,43 @@ header .navbar {
   font-size: 14px;
   line-height: 23px;
   color: #707a8a;
-  
+}
+#team .team-overlay p {
+  font-size: clamp(12px, 14px, 16px);
+}
+@media (min-width:470px) and (max-width: 767px) {
+    #team .team-overlay {
+      padding: 15px;
+    }
+    #team .team-overlay h3 {
+      font-size: 16px;
+    }
+    #team .team-overlay p + p {
+      display: none;
+    }
+}
+@media (min-width:341px) and (max-width: 469px) {
+    #team .team-overlay {
+      padding: 2rem;
+    }
+    #team .team-overlay h3 {
+      font-size: 15px;
+      padding: 1rem;
+    }
+    #team .team-overlay p {
+      display: none;
+    }
+}
+@media (min-width:200px) and (max-width: 340px) {
+    #team .team-overlay {
+      padding: 15px;
+    }
+    #team .team-overlay > h3 span{
+      display: none;
+    }
+    #team .team-overlay p {
+      display: none;
+    }
 }
 #team .team-overlay .media {
   margin-top: 10px;
@@ -990,6 +1026,17 @@ footer p {
   bottom: 0;
   content: '';
 }
+@media (max-width: 767px) {
+  #page-banner {
+    /* If your subject is slightly to the right, use percentages: 
+       70% means show more of the right side, 50% is center */
+    background-position: 50% center; 
+    
+    /* You might want to reduce padding on mobile so the 
+       banner isn't huge compared to the text */
+    padding: 200px 0; 
+  }
+}
 
 .page-sections {
   display: flex;
@@ -1229,6 +1276,7 @@ html {
   line-height: 1.7;
   color: #333;
   margin-bottom: 15px;
+  margin-top: 15px;
 }
 .partner-image {
   text-align: right;
