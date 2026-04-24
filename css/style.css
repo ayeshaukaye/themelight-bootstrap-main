@@ -526,7 +526,7 @@ header .navbar {
   background: rgba(255, 255, 255, 0.95);
   color: #fff;
   text-align: center;
-  padding: 48px 62px;
+  padding: 30px;
   position: absolute;
   bottom: -150px;
   left: 0;
@@ -568,6 +568,14 @@ header .navbar {
 }
 #team .team-overlay p {
   font-size: clamp(12px, 14px, 16px);
+}
+@media (min-width:768px) and (max-width: 991px) {
+    #team .team-overlay {
+      padding: 15px;
+    }
+    #team .team-overlay p{
+      font-size: 13px;
+    }
 }
 @media (min-width:470px) and (max-width: 767px) {
     #team .team-overlay {
