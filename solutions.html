@@ -25,7 +25,7 @@
 
 </head>
 
-<body id="top">
+<body id="top" class="soln-pg">
 	<header id="navigation" class="navbar-fixed-top animated-header">
 		<div class="container">
 			<div class="navbar-header">
@@ -121,7 +121,7 @@
 
 		<div class="tab-content">
 			<div id="automation" class="tab-pane fade in active">
-				<section id="automation" class="container">
+				<section id="automation-sec" class="container">
 					<div class="title">
 						<h2>Industrial Automation</h2>
 						<p> Granthium Automation is an independent automation solutions provider, experienced across a wide range of leading controller platforms. Our services cover the complete automation project lifecycle — from conceptual design and detailed engineering to programming, panel assembly, and on-site implementation. We deliver PLC-based process and machine control systems with integrated visualization and data acquisition solutions.</p>
@@ -181,7 +181,7 @@
 			</div>
 			<div id="power-generation" class="tab-pane fade">
 				<!-- Power Generation Section -->
-				<section id="power-generation">
+				<section id="power-generation-sec">
 				<div class="container">
 					<div class="row">
 						<div class="title">
@@ -223,7 +223,7 @@
 				</section>
 			</div>
 			<div id="microgrid" class="tab-pane fade">
-				<section id="microgrid" class="container">
+				<section id="microgrid-sec" class="container">
 					<div class="title">
 						<h2>MICROGRID SOLUTIONS</h2>
 						<p>Our sustainable energy solution includes controls for Microgrids comprises of Solar Array, Battery Energy Storage Systems and Diesel Generator sets.</p>
@@ -250,7 +250,7 @@
 				</section>
 			</div>
 			<div id="training" class="tab-pane fade">
-				<section id="training" class="container">
+				<section id="training-sec" class="container">
 					<div class="title">
 						<h2>TRAINING & SIMULATION MODULES</h2>
 					</div>
@@ -309,6 +309,62 @@
     Bootstrap JS 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	-->
+
+	<script>
+		$(document).ready(function() {
+			// 1. Handle tab switching on page load (if URL contains a hash)
+			var urlHash = window.location.hash;
+			if (urlHash) {
+				// Find the pill that matches the hash and trigger Bootstrap's show method
+				$('.nav-pills a[href="' + urlHash + '"]').tab('show');
+			}
+			// Scroll down past the hero image and intro text directly to the tabs
+			setTimeout(function() {
+				// Find the physical position of your nav-pills on the page
+				var tabsPosition = $('.nav-pills').offset().top;
+				
+				// Scroll the page down to the tabs. 
+				// The "- 50" leaves a 50px gap at the top of the screen so it doesn't look cut off.
+				$('html, body').animate({
+					scrollTop: tabsPosition - 100 
+				}, 600); // 600ms scroll animation speed
+			}, 150);
+
+		// 2. Handle tab switching when clicking the navbar dropdown links on the same page
+		$('.dropdown-menu a').on('click', function (e) {
+			// Extract the hash from the clicked link (e.g., "#microgrid")
+			var targetHash = this.hash; 
+			
+			// If the hash matches one of our tab panes, handle the switch
+			if (targetHash && $(targetHash).hasClass('tab-pane')) {
+				e.preventDefault(); // Stop the default page jump
+				
+				// Trigger the corresponding pill
+				$('.nav-pills a[href="' + targetHash + '"]').tab('show');
+				
+				// Optional: Update the URL bar so the user can bookmark/share the specific tab
+				if (history.pushState) {
+					history.pushState(null, null, targetHash);
+				} else {
+					window.location.hash = targetHash;
+				}
+			}
+			// Also scroll down to the tabs in case they were at the top of the page
+            var tabsPosition = $('.nav-pills').offset().top;
+            $('html, body').animate({
+                scrollTop: tabsPosition - 100
+            }, 600);
+            
+            // Update the URL hash without reloading
+            if (history.pushState) {
+                history.pushState(null, null, targetHash);
+            } else {
+                window.location.hash = targetHash;
+            }
+        	
+		});
+	});
+	</script>
 </body>
 
 </html>
